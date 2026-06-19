@@ -1,17 +1,22 @@
+from datetime import datetime
+
 # indexes
 reservations = []
+seat_number_set = set()
 NAME = 0
 SEAT_NUM = 1
 MOVIE_TITLE = 2
+RESERVATION_DATE = 3
 
 def view_reservations():
     print()
     print("=" * 30)
     print("Recorded Reservations:")
     for i in range(0, len(reservations), 1):
-        print(f"{i+1}: Name: {reservations[i][NAME]}")
+        print(f"{i+1}: Name: {reservations[i][NAME].title()}")
         print(f"- Seat Number: {reservations[i][SEAT_NUM]}")
-        print(f"- Movie Title: {reservations[i][MOVIE_TITLE]}")
+        print(f"- Movie Title: {reservations[i][MOVIE_TITLE].title()}")
+        print(f"- Date Recorded: {reservations[i][RESERVATION_DATE]}")
     print("=" * 30)
     print()
 
@@ -33,12 +38,12 @@ def add_reservations():
     num_reservations = get_num_reservations()
 
     reservation_valid = True
-    seat_number_set = set()
+    
     i = 0
 
     while i < num_reservations:
 
-        input_name = input("Enter name: ").strip().capitalize()
+        input_name = input("Enter name: ").strip().lower()
         input_seat_number = int(input("Enter seat number: "))
 
         if input_seat_number not in seat_number_set:
@@ -50,23 +55,26 @@ def add_reservations():
             print()
             continue
 
-        input_movie_title = input("Enter movie title: ").strip().capitalize()
+        input_movie_title = input("Enter movie title: ").strip().lower()
         
         if reservation_valid:
-            reservations.append((input_name, input_seat_number, input_movie_title))
+            current_date = datetime.now()
+            formatted_curr_date = current_date.strftime("%m/%d/%Y, %H:%M:%S")
+            reservations.append((input_name, input_seat_number, input_movie_title, formatted_curr_date))
             i += 1
     print()
 
 def filter_reservations_by_movie(movie_name):
     print()
-    print("=" * (30 + len(movie_name) * len(movie_name)))
+    print("=" * (30 + len(movie_name)))
     print("Recorded Reservations under the movie: ", movie_name)
     for i in range(0, len(reservations), 1):
         if reservations[i][MOVIE_TITLE] == movie_name:
-            print(f"{i+1}: Name: {reservations[i][NAME]}")
+            print(f"{i+1}: Name: {reservations[i][NAME].title()}")
             print(f"- Seat Number: {reservations[i][SEAT_NUM]}")
-            print(f"- Movie Title: {reservations[i][MOVIE_TITLE]}")
-    print("=" * (30 + len(movie_name) * len(movie_name)))
+            print(f"- Movie Title: {reservations[i][MOVIE_TITLE].title()}")
+            print(f"- Date Recorded: {reservations[i][RESERVATION_DATE]}")
+    print("=" * (30 + len(movie_name)))
     print()
 
 # MAIN:
@@ -94,7 +102,7 @@ while True:
         case 2:
             add_reservations()
         case 3:
-            filter_reservations_by_movie(input("Enter movie to filter: "))
+            filter_reservations_by_movie(input("Enter movie to filter: ").strip().lower())
         case 4:
             print("Code by Ned Markus S. Basilio | CS-201")
             break
