@@ -25,7 +25,6 @@ def get_num_reservations():
         try:
             num_reservations = int(input("Enter number of reservations: "))
             return num_reservations
-            break
         except ValueError as ve:
             print("Enter valid number.")
 
