@@ -1,0 +1,8 @@
+---- Student Report ----
+Name: Ned, Grade: 94, Raw Grade: 93.500
+Name: Angelina, Grade: 96, Raw Grade: 96.250
+Name: Kenn, Grade: 93, Raw Grade: 93.000
+Name: Kian, Grade: 96, Raw Grade: 96.500
+Name: Jhoy, Grade: 94, Raw Grade: 94.000
+---- Highest Grade ----
+Name: Kian, Grade: 96, Raw Grade: 96.500

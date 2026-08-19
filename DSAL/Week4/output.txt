@@ -1,0 +1,54 @@
+lstA: [2, 5, 6, 9, 8]
+lstB: [7, 3, 6, 8, 4]
+lstC: [5, 9, 1, 3, 4]
+LstTD:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+
+1. Copy the elements of lstA to row 1 of LstTD
+LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+
+2. Reverse lstB:
+[4, 8, 6, 3, 7]
+
+3. Copy the elements of lstB to row2 LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+
+4. Sort lstC:
+[1, 3, 4, 5, 9]
+
+5. Copy the elements of lstC to row 3 of LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [1, 3, 4, 5, 9], [0, 0, 0, 0, 0]]
+
+6. Input the following values to row 4 of LstTD: 2, 6, 4, 9, 8
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [1, 3, 4, 5, 9], [2, 4, 6, 9, 8]]
+
+7. Compute for the sum of row1 except row 4 and store in row 4 column 0:
+LstTD[4][0] = 30
+LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [1, 3, 4, 5, 9], [30, 4, 6, 9, 8]]
+
+8. Compute for the sum of column 1 an store in row 4 column 1
+Sum of column 1 in all rows: 20
+LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [1, 3, 4, 5, 9], [30, 20, 6, 9, 8]]
+
+9. Assign in row 4 col 2, the highest element in row 3
+Highest value in row 3: 9
+LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [1, 3, 4, 5, 9], [30, 20, 9, 9, 8]]
+
+10. Assign in row 4 col 3 the lowest element in row 4
+Lowest element in row 4: 8
+LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [1, 3, 4, 5, 9], [30, 20, 9, 8, 8]]
+
+11. Assign in row 4 col 4 the sum of TD[0][0] and TD[3][3]
+LstTD[4][4] = 0 + 5
+LstTD:
+[[0, 0, 0, 0, 0], [2, 5, 6, 9, 8], [4, 8, 6, 3, 7], [1, 3, 4, 5, 9], [30, 20, 9, 8, 5]]
+
+12. Count the odd and even number of elements in TD
+Evens: 15 | Odds: 10
+
+Code By: Ned Markus S. Basilio | CS-201

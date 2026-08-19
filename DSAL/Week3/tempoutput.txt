@@ -1,0 +1,14 @@
+Code by: Ned Markus S. Basilio | CS-201
+
+Test Case Values:
+27.20C 24.70C 29.40C 25.30C 26.50C 23.90C 27.80C 25.00C 28.20C 26.90C 
+
+Hot Days: array('d', [27.2, 29.4, 26.5, 27.8, 28.2, 26.9])
+Non-hot Days: array('d', [24.7, 25.3, 23.9, 25.0])
+
+Number of hot days and non-hot days: 10
+Number of hot days: 6
+Number of non-hot days: 4
+
+Average temperature for hot days: 27.67C
+Average temperature for non-hot days: 24.73C

@@ -1,8 +1,11 @@
+# Code By: Ned Markus S. Basilio | CS-201
 grade_file = open("Studgrade.txt", "w+")
 
 grade_file.write("Ned,92,93,94,95\n")
 grade_file.write("Angelina,95,96,97,97\n")
-grade_file.write("Kenn,92,91,90,99")
+grade_file.write("Kenn,92,91,90,99\n")
+grade_file.write("Kian,97,96,97,96\n")
+grade_file.write("Jhoy,93,92,95,96")
 
 grade_file.close()
 
@@ -41,14 +44,22 @@ for student_info in student_grades:
     #print(student_report_data)
 
 print(student_report_data)
-highest_grade = ["Name", 0]
 
+computed_grades.write("---- Student Report ----\n")
 for data in student_report_data:
-    print(f"Name: {data[0]}, Grade: {data[1]}")
+    print(f"Name: {data[0]}, Grade: {round(data[1])}, Raw Grade: {data[1]:.3f}")
+    computed_grades.write(f"Name: {data[0]}, Grade: {round(data[1])}, Raw Grade: {data[1]:.3f}")
+    computed_grades.write("\n")
+    
+highest_grade = ["Name", 0]
 
 for i in range(0, len(student_report_data), 1):
     if highest_grade[1] < student_report_data[i][1]:
         highest_grade = list(student_report_data[i])
 
-print(f"Highest Grade:\nName: {highest_grade[0]}, Grade: {highest_grade[1]}")
-    
+computed_grades.write("---- Highest Grade ----\n")
+print(f"Highest Grade:\nName: {highest_grade[0]}, Grade: {round(highest_grade[1])}, Raw Grade: {highest_grade[1]:.3f}")
+computed_grades.write(f"Name: {highest_grade[0]}, Grade: {round(highest_grade[1])}, Raw Grade: {highest_grade[1]:.3f}")
+
+computed_grades.close()
+ 

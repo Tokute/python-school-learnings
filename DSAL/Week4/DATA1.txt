@@ -1,0 +1,84 @@
+1. Declare the given two dimensional arrays
+TDA:
+2 6 8 1 4 3 
+3 6 4 5 7 1 
+9 3 6 4 8 5 
+3 6 5 8 7 5 
+3 6 7 4 3 5 
+
+TDB:
+9 5 1 7 5 3 
+6 8 2 1 3 4 
+6 9 4 3 2 1 
+6 2 5 4 6 3 
+3 3 3 3 5 3 
+
+
+2. Copy the TDA column3 to TDB column5
+TDB:
+9 5 1 7 5 1 
+6 8 2 1 3 5 
+6 9 4 3 2 4 
+6 2 5 4 6 8 
+3 3 3 3 5 4 
+
+
+3. Copy the TDA row 4 to TDB column2
+TDB:
+9 5 3 7 5 1 
+6 8 6 1 3 5 
+6 9 7 3 2 4 
+6 2 4 4 6 8 
+3 3 3 3 5 4 
+
+
+4. Compute and display for the sum of TDA first column and TDB first row
+TDA Sum of first column: 20
+TDB Sum of first row: 30
+Sum of TDA first column and TDB first row: 50
+
+5. Compute and display for the sum of TDA last row and TDA last column
+Sum of TDA last row: 28
+Sum of TDA last column: 19
+Sum of TDA last row and TDA last column: 47
+
+6. Count the elements in TDA with values of 3
+Values of 3 in TDA: 6
+
+7. Count the elements in TDB with values of 4
+Values of 4 in TDB: 4
+
+8. Assign a one-dimensional array that will store the value, if row 0 of TDA is greater than row 4 of TDB is TRUE store the value of TDA otherwise the value of TDB
+One-dimensional array formed: [3, 6, 8, 3, 5, 4]
+
+9. Sort the values of TDA
+TDA sorted:
+2 6 8 1 4 3 
+3 6 4 5 7 1 
+3 6 5 8 7 5 
+3 6 7 4 3 5 
+9 3 6 4 8 5 
+
+
+10. Reverse the value of TDB
+TDB reversed:
+3 3 3 3 5 4 
+6 2 4 4 6 8 
+6 9 7 3 2 4 
+6 8 6 1 3 5 
+9 5 3 7 5 1 
+
+
+11. Compute for the sum of all values greater than 5 in TDA
+Sum of all values greater than 5 in TDA: 84
+
+12. Compute for the sum of all values less than 6 in TDB
+Sum of all values less than 6 in TDB: 63
+
+13. Compute for the sum of TDA
+Sum of TDA: 147
+
+14. Compute for the sum of TDA except all values row2
+Sum of TDA except row2: 113
+
+Code By: Ned Markus S. Basilio | CS-201

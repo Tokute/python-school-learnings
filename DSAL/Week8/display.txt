@@ -1,0 +1,37 @@
+Code By: Ned Markus S. Basilio and Cryztelle Jhoy Santos | CS-201
+
++ Enqueued: 5
++ Enqueued: 3
++ Enqueued: 6
++ Enqueued: 7
++ Enqueued: 4
++ Enqueued: 8
++ Enqueued: 6
++ Enqueued: 1
+- Dequeued: 5
+- Dequeued: 3
+- Dequeued: 6
+- Dequeued: 7
++ Enqueued: 6
++ Enqueued: 1
++ Enqueued: 2
++ Enqueued: 7
++ Enqueued: 4
++ Enqueued: 6
+! Queue is full. Cannot enqueue.
+- Dequeued: 4
+- Dequeued: 8
+- Dequeued: 6
+- Dequeued: 1
+- Dequeued: 6
+- Dequeued: 1
+Queue contents:
+
+ - 2
+ - 7
+ - 4
+ - 6
+
+Front index: 0, Rear index: 3
+Front item: 2, Rear item: 6
+

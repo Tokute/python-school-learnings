@@ -1,3 +1,4 @@
+# Code by: Ned Markus S. Basilio | CS-201
 
 Q1 = open("Q1.txt", "w+")
 Q2 = open("Q2.txt", "w+")
@@ -13,8 +14,8 @@ quarters = [
         ['October', 'November', 'December']
     ]
 
-for i in range(0, 4, 1):
-    for j in range(0, 3, 1):
+for i in range(len(quarters)):
+    for j in range(len(quarters[0])):
         files[i].write(quarters[i][j])
         files[i].write("\n")
     files[i].close()
@@ -29,5 +30,3 @@ files = [Q1, Q2, Q3, Q4]
 for i in range(0, len(files), 1):
     print(files[i].read().rstrip())
     files[i].close()
-
-
