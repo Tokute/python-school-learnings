@@ -47,6 +47,7 @@ class LinkedList:
         last_node.next = new_node
 
     def add_data_middle(self):
+
         size = self.get_size()
 
         if size == 0:

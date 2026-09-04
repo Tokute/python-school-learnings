@@ -58,5 +58,3 @@ if __name__ == "__main__":
                 break
             case _:
                 print("Invalid Choice. Enter numbers within 1-2.")
-
-        

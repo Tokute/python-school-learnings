@@ -38,7 +38,6 @@ class DoublyLinkedList():
         print("Next:", next.data if next != "NULL" else "NULL")
         print("=" * 20)
 
-
 if __name__ == "__main__":
     dbl = DoublyLinkedList()
 
